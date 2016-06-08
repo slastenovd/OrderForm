@@ -1,0 +1,10 @@
+        .doc_header{
+            background-color: #6f5499;
+            color: #cdbfe3;
+            padding-top: 10px;
+            padding-bottom: 20px;        
+        }
+        .bb_img{
+            max-height: 200px;
+            max-width: 150px;
+        }

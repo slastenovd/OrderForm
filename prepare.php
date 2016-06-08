@@ -8,6 +8,7 @@ if (!defined("MY_SMARTY_DIR"))      define("MY_SMARTY_DIR",   "smarty/");
 require_once MY_DBSIMPLE_DIR."DbSimple/Generic.php";
 require_once MY_DBSIMPLE_DIR."config.php";
 require_once MY_SMARTY_DIR."libs/Smarty.class.php";
+require_once "db.php";
 
 $smarty = new Smarty();
 $smarty->compile_check = true;
@@ -15,9 +16,5 @@ $smarty->template_dir = MY_SMARTY_DIR.'templates';
 $smarty->compile_dir  = MY_SMARTY_DIR.'templates_c';
 $smarty->cache_dir    = MY_SMARTY_DIR.'cache';
 $smarty->config_dir   = MY_SMARTY_DIR.'configs';
-//$smarty->debugging = true;
-//$db = DbSimple_Generic::connect('mysqli://'.$iniArray['UserName'].':'.$iniArray['Password'].'@'.$iniArray['ServerName'].'/'.$iniArray['Database']);
-//$db->setErrorHandler('databaseErrorHandler');    
-//$db->setLogger('myLogger');
 
-?>
+$db = DbSimple_Generic::connect('mysqli://'.USER_NAME.':'.PASSWORD.'@'.SERVER_NAME.'/'.DATABASE);

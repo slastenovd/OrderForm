@@ -18,8 +18,6 @@
     <script type="text/javascript" src="js/jquery.form.min.js"></script>
     <script type="text/javascript" src="js/orderform.js"></script>
     <link rel="stylesheet" href="css/OrderForm.css">
- 
-    
     <title>Заказ Лавацца в г.Комсомольск-на-Амуре</title>
     <body>
 
@@ -31,7 +29,6 @@
             <h1 class="text-center">Заказ капсульной кофемашины LAVAZZA</h1>
         </div>
 
-    
         <div class='row'>
             <div class="col-md-4">
                 <div class="media">    
@@ -78,9 +75,6 @@
             </div>
         </div>
         
-
-
-        
         <div id="container_success" class="alert alert-success text-center" role="alert" style="display: none"></div>
         <h3 class="text-center checkin-remove-after-success">Сообщите нам, как с Вами связаться</h3>
         <div class="jumbotron checkin-remove-after-success">
@@ -99,6 +93,10 @@
                 <label for="phone">Номер телефона</label>
                 <input id="phone" name="phone" type="text" class="form-control" placeholder="телефон" value="">
             </div>
+            <div class="form-group">
+                <label for="description">Дополнительная информация</label> 
+                <textarea maxle rows="5" ngth="3000" class="form-control" name="description" placeholder="Если необходимо, добавьте дополнительную информацию, такую как удобное время, когда с Вами можно связаться, или уточнить детали заказа" id="description"></textarea> 
+            </div>                 
             <div  class="text-center">
                 <button type="submit" class="btn btn-primary">Заказать кофемашину бесплатно</button>
             </div>
@@ -116,8 +114,6 @@
           <strong>Зебрев Сергей, управляющий офисом </strong><br>
           <a href="mailto:#">manager@lavazza-kms.ru</a>
         </address>        
-
-
     </div>
   </div>
 </div>
